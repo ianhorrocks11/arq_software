@@ -29,12 +29,9 @@ func GetCategories(siteID string) (Categories ,error) {
 
 	bytes := ioutil.ReadAll(response.Bytes) //completar
 
-
 	var cats Categories
-	err =: json.Unmarshal(bytes, &cats) //hay que poner el if etc
-
 	
-
+	err =: json.Unmarshal(bytes, &cats) //hay que poner el if etc
 
 	return cats, nil
 
